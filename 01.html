@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing:border-box;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: #15869d;
+    line-height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav .logo p{
+    font-size: 30px;
+    float: left;
+    font-weight: bolder;
+    font-style: bold; 
+    color: whitesmoke;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    padding: 0px 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+nav li a:hover{
+    color:orangered;
+    transition:all 0.4s ease 0s; 
+}
+nav li a.active{
+    color: rgb(53, 146, 174);
+    font-weight: bold;
+}
+section{
+  background-color: #23404c;
+  padding: 50px;
+  height: 100vh;
+}
+section h1{
+    padding: 50px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <p>logo</p>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#about us">About us</a></li>
+            <li><a href="#contact us">Contact us</a></li>
+        </ul>
+    </nav>
+    </header>
+<section id="home" ><h1 font="Arial">This is the home page</h1></section>
+<section id="labs"><h1>This the lab section </h1></section>
+<section id="about us"><h1>This is about us</h1></section>
+<section id="contact us"><h1>Contact us Information</h1></section>
+</body>
+</html>
